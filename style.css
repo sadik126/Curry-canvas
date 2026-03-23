@@ -4,3 +4,75 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('Ubuntu/Ubuntu-Regular.ttf');
+}
+
+ /* navber starts */
+
+.navber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    
+}
+
+.title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.title span{
+    /* color: #ff5722; */
+     background: linear-gradient(to right, #ff9900, #ff0000);
+     -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .navber ul{
+    display: flex;
+    
+    
+}
+
+
+.container .navber ul li{
+    margin: 0 20px;
+    list-style: none;
+
+}
+
+.container .navber ul li a {
+    text-decoration: none;
+    color: #0b0b0b;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.container .navber ul li a:hover {
+    background-color: #ff9900;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navber .toggle_btn{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* header starts */
+ .container{
+    height: 100vh;
+    background-image: url('/Image/food\ banner.webp');
+    background-size: cover;
+    background-position: center;
+}
