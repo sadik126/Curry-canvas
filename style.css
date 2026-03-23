@@ -48,7 +48,7 @@
 
 .container .navber ul li a {
     text-decoration: none;
-    color: #0b0b0b;
+    color: #fffdfd;
     font-size: 18px;
     font-weight: 500;
     padding: 10px 20px;
@@ -62,6 +62,13 @@
     font-weight: 700;
 }
 
+
+.container .navber ul li a:active{
+   scale: 0.95;
+}
+
+
+
 .navber .toggle_btn{
     display: none;
     font-size: 24px;
@@ -72,7 +79,8 @@
 /* header starts */
  .container{
     height: 100vh;
-    background-image: url('/Image/food\ banner.webp');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(96, 96, 96, 0.5)), url('/Image/food\ banner.webp') ;
+   
     background-size: cover;
     background-position: center;
 }
