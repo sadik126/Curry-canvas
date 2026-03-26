@@ -24,6 +24,7 @@
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-size: 40px;
+    color: #fffdfd;
 }
 
 .title span{
@@ -64,7 +65,7 @@
 
 
 .container .navber ul li a:active{
-   scale: 0.95;
+   scale: 2.95;
 }
 
 
@@ -76,11 +77,319 @@
     color: #fff;
 }
 
+
+
+  .dropdownmenu{
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 60px;
+        height: 0;
+        width: 300px;
+        background: rgba(255,255 ,255,0.1);
+        list-style: none;
+        backdrop-filter: blur(15px);
+        overflow: hidden;
+        transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+     .dropdownmenu.open {
+        height: 280px;
+    }
+
+  
+
+   
+
+
+    .dropdownmenu li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem;
+    }
+
+
 /* header starts */
  .container{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(96, 96, 96, 0.5)), url('/Image/food\ banner.webp') ;
+    background: linear-gradient(rgba(0, 0, 0, 0.893), rgba(0, 0, 0, 0.762)), url('/Image/food\ banner.webp') ;
    
     background-size: cover;
     background-position: center;
+}
+
+
+/* banner starts */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.banner_content{
+    max-width: 500px;
+    color: #fffdfd;
+}
+
+.banner_content h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #f47608;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+
+.banner_image{
+    width: 50%;
+}
+
+.banner_title{
+   font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff9900, #ff3c00, #ff9900);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+
+.more{
+  padding: 14px 28px;
+    background: rgba(255, 255, 255, 0.1);   /* transparent glass */
+    backdrop-filter: blur(10px);           /* glass blur effect */
+    -webkit-backdrop-filter: blur(10px);   /* safari support */
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.button_group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+    
+}
+
+.banner_text{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+     color: #ffffff;
+     font-family: poppins, sans-serif;
+     animation: fadeIn 1.5s ease;
+     line-height: 35px;
+  
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+
+/* about section  */
+.about_title{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+        font-weight: 800;
+ 
+    text-transform: uppercase;
+     background: linear-gradient(to right, #ff9900, #ff0000);
+     -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about{
+    background-color: #3d3d3d;
+    border-radius: 10px;
+    padding: 130px 150px;
+    margin-top: 25px;;
+}
+
+.about p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fffdfd;
+    text-align: center;
+}
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.about_image{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+
+
+/* responsive design */
+@media(max-width:768px){
+    .navber .toggle_btn{
+        display: block;
+    }
+
+  
+
+    .container .navber ul{
+        position: absolute;
+        top: 70px;
+        right: 50px;
+        background-color: rgba(0,0,0,0.8);
+        padding: 10px 20px;
+        border-radius: 6px;
+        display: none;
+        flex-direction: column;
+    }
+
+    .container .navber ul li{
+        margin: 10px 0;
+    }
+
+    
+
+
+    .dropdownmenu{
+        display: block;
+        left: 2rem;
+        width: unset;
+        top: 5rem;
+    }
+
+
+
+    .dropdownmenu li a {
+         font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+      .dropdownmenu  li a:hover{
+        background-color: #ff9900;
+        padding: 20px 40px;
+         border-radius: 6px;
+         transition: all 0.3s ease;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .container .navber ul.show{
+        display: flex;
+    }
+
+
+
+    /* banner starts  */
+
+    .banner{
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .button_group{
+        justify-content: space-between;
+    }
+
+
+    .container{
+        height: max-content;
+    }
 }
