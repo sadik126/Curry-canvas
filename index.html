@@ -16,11 +16,11 @@
     <!-- //navber starts// -->
     <header class="container">
 
-        <nav class="navber">
+      <nav class="navber">
             <h3 class="title">Curry <span>Canvas</span> </h3>
             <ul>
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="#">About</a> </li>
+                <li> <a href="./index.html">Home</a> </li>
+                <li> <a href="./about.html">About</a> </li>
                 <li> <a href="#">Contact</a> </li>
                 <li> <a href="#">Menu</a> </li>
 
@@ -31,8 +31,8 @@
             </div>
 
             <div class="dropdownmenu open">
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="#">About</a> </li>
+                <li> <a href="./index.html">Home</a> </li>
+                <li> <a href="./about.html">About</a> </li>
                 <li> <a href="#">Contact</a> </li>
                 <li> <a href="#">Menu</a> </li>
             </div>
@@ -60,20 +60,143 @@
 
     <main>
         <section class="about">
-            <h2 class="about_title">About Us</h2>
-            <p>Welcome to Curry Canvas, where we bring the authentic flavors of Bangladesh to your plate. Our journey began with a passion for traditional cooking and a desire to share the rich culinary heritage of our homeland.</p>
+            <h2 class="section_title">About Us</h2>
+            <p>Welcome to Curry Canvas, where we bring the authentic flavors of Bangladesh to your plate. Our journey
+                began with a passion for traditional cooking and a desire to share the rich culinary heritage of our
+                homeland.</p>
 
-            <div  class="about_image">
+            <div class="about_image">
                 <img src="./Image/fast-food.png" alt="">
                 <img src="./Image/pizza.png" alt="">
                 <img src="./Image/biryani.png" alt="">
             </div>
         </section>
 
+        <section class="food_feature">
+            <div class="food_image">
+                <img src="./Image/curry1.webp" alt="">
+                <img src="./Image/curry3.webp" alt="">
+                <img src="./Image/curry5.webp" alt="">
+                <img src="./Image/curry4.webp" alt="">
+            </div>
+            <div class="feature_content">
+                <h3 class="section_title">Our Food Features</h3>
+                <p>Discover the unique blend of traditional and modern flavors that make our dishes special.</p>
+                <button class="button-86" role="button">Learn More</button>
+
+
+
+
+            </div>
+        </section>
+
+        <section class="our_sponsors">
+            <div class="sponsor_info">
+                <h3 class="section_title">Our Sponsors</h3>
+                <p>We are grateful for the support of our wonderful sponsors who help us share the authentic flavors of
+                    Bangladesh with the world.</p>
+
+                <div class="sponsor_videos">
+                    <video autoplay muted loop playsinline>
+                        <source src="./Image/Amazon.mp4" type="video/mp4">
+                    </video>
+
+                    <video autoplay muted loop playsinline>
+                        <source src="./Image/Uber Eats.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="menu">
+            <h3 class="section_title">Our Menu</h3>
+            <p>
+                Explore our diverse menu featuring a variety of curries, biryanis,
+                and traditional Bangladeshi dishes.
+            </p>
+
+            <div class="menu_items" id="menuContainer"></div>
+        </section>
+
+
+        <section class="review">
+            <h3 class="section_title">Customer Reviews</h3>
+            <p>Here’s what our customers have to say about their experience at Curry Canvas!</p>
+
+            <div class="review-container">
+                <!-- Review Card 1 -->
+                <div class="review-card">
+                    <img src="./Image/sarah.webp" alt="Customer 1" class="review-img">
+                    <h4>Sarah Khan</h4>
+                    <p>"The food at Curry Canvas is absolutely amazing! The spices are perfect and the service is
+                        excellent. Highly recommend the Chicken Curry."</p>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <img src="./Image/rafiq.webp" alt="Customer 2" class="review-img">
+                    <h4>Rafiq Ahmed</h4>
+                    <p>"I love the cozy atmosphere and the authentic taste of the dishes. The staff are very friendly
+                        too. Definitely coming back soon!"</p>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <img src="./Image/leena.webp" alt="Customer 3" class="review-img">
+                    <h4>Leena Roy</h4>
+                    <p>"Curry Canvas is my go-to for South Asian cuisine. Every dish is flavorful and beautifully
+                        presented. A five-star experience!"</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
+        <div class="footer-container">
+            <!-- Logo & Description -->
+            <div class="footer-column">
+                <h3 class="title">Curry <span>Canvas</span> </h3>
+                <p>Curry Canvas brings the authentic flavors of South Asia straight to your table. Taste the tradition!
+                </p>
+            </div>
 
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Mon-Fri: 11:00 AM - 10:00 PM</li>
+                    <li>Sat-Sun: 12:00 PM - 11:00 PM</li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:info@currycanvas.com">info@currycanvas.com</a></li>
+                    <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li>Address: 123 Curry Street, Food City</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            &copy; 2026 Curry Canvas. All rights reserved.
+        </div>
     </footer>
 </body>
 <script src="script.js"></script>

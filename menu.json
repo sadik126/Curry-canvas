@@ -1,0 +1,98 @@
+{
+  "menu": [
+    {
+      "name": "Chicken Curry",
+      "image": "./Image/chicken curry.webp",
+      "description": "Tender chicken cooked in a rich and aromatic Bangladeshi gravy.",
+      "tags": ["Spicy", "Traditional", "Chef's Special"],
+      "oldPrice": "£14.99",
+      "price": "£10.99",
+       "rating": 4.5,
+      "reviewCount": 245,
+      "reviews": "245 Reviews",
+      "stock": "In Stock",
+      "badge": "Popular"
+    },
+    {
+      "name": "Beef Biryani",
+      "image": "./Image/beef_biriyani.webp",
+      "description": "Fragrant basmati rice layered with slow-cooked spiced beef and caramelized onions.",
+      "tags": ["Bestseller", "Aromatic", "Rice Dish"],
+      "oldPrice": "£16.99",
+      "price": "£12.99",
+      "rating": 4.7,
+      "reviewCount": 310,
+      "reviews": "310 Reviews",
+      "stock": "In Stock",
+      "badge": "Hot"
+    },
+    {
+      "name": "Vegetable Korma",
+      "image": "./Image/vegetable_korma.jpg",
+      "description": "A creamy coconut-based curry made with fresh seasonal vegetables and mild spices.",
+      "tags": ["Vegetarian", "Creamy", "Healthy"],
+      "oldPrice": "£12.99",
+      "price": "£9.49",
+      "rating": 4.3,
+      "reviewCount": 120,
+      "reviews": "120 Reviews",
+    
+      "stock": "In Stock",
+      "badge": "Healthy"
+    },
+    {
+      "name": "Mutton Rezala",
+      "image": "./Image/mutton-rezala.webp",
+      "description": "A royal Mughlai dish featuring tender mutton in a rich yogurt and cashew gravy.",
+      "tags": ["Royal", "Mild", "Special"],
+      "oldPrice": "£18.99",
+      "price": "£14.99",
+      "rating": 4.2,
+      "reviewCount": 185,
+      "reviews": "185 Reviews",
+        
+      "stock": "In Stock",
+      "badge": "Chef's Pick"
+    },
+    {
+      "name": "Prawn Malai Curry",
+      "image": "./Image/prawn_malai_curry.webp",
+      "description": "Juicy prawns cooked in a creamy coconut milk gravy with delicate spices.",
+      "tags": ["Seafood", "Creamy", "Premium"],
+      "oldPrice": "£19.99",
+      "price": "£15.49",
+      "rating": 4.6,
+      "reviewCount": 210,
+      "reviews": "210 Reviews",
+      "stock": "In Stock",
+      "badge": "Premium"
+    },
+    {
+      "name": "Egg Masala Curry",
+      "image": "./Image/egg-masala-curry.webp",
+      "description": "Boiled eggs simmered in a thick, spicy tomato-onion gravy.",
+      "tags": ["Protein Rich", "Spicy", "Classic"],
+      "oldPrice": "£10.99",
+      "price": "£7.99",
+      "rating": 4.1,
+      "reviewCount": 98,
+      "reviews": "98 Reviews",
+      "stock": "In Stock",
+      "badge": "Classic"
+    },
+    {
+      "name": "Chicken Bhuna",
+      "image": "./Image/chicken-vuna.webp",
+      "description": "Dry-style spicy chicken cooked with caramelized onions and traditional spices.",
+      "tags": ["Spicy", "Dry Curry", "Traditional"],
+      "oldPrice": "£15.49",
+      "price": "£11.49",
+      "rating": 4.4,
+      "reviewCount": 167,
+
+      "reviews": "167 Reviews",
+      "stock": "In Stock",
+      "badge": "Spicy"
+    }
+  ]
+}
