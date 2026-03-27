@@ -1,3 +1,5 @@
+
+// navber for mobile 
 const toggleBtn = document.querySelector('.toggle_btn');
 const dropdownMenu = document.querySelector('.dropdownmenu');
 const toggleIcon = document.querySelector('.toggle_btn i');
@@ -8,6 +10,14 @@ toggleBtn.addEventListener('click', () => {
     toggleIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 });
 
+
+// Wait until page is fully loaded
+window.addEventListener("load", () => {
+  const spinner = document.getElementById("loadingSpinner");
+  spinner.style.display = "none"; // hide spinner
+});
+
+// fetch all the data from menu.json and display in menu page
 
 fetch('menu.json')
   .then(res => res.json())

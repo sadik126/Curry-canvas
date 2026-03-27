@@ -2,12 +2,13 @@
   "menu": [
     {
       "name": "Chicken Curry",
+      "category": "main",
       "image": "./Image/chicken curry.webp",
       "description": "Tender chicken cooked in a rich and aromatic Bangladeshi gravy.",
       "tags": ["Spicy", "Traditional", "Chef's Special"],
       "oldPrice": "£14.99",
       "price": "£10.99",
-       "rating": 4.5,
+      "rating": 4.5,
       "reviewCount": 245,
       "reviews": "245 Reviews",
       "stock": "In Stock",
@@ -15,6 +16,7 @@
     },
     {
       "name": "Beef Biryani",
+      "category": "main",
       "image": "./Image/beef_biriyani.webp",
       "description": "Fragrant basmati rice layered with slow-cooked spiced beef and caramelized onions.",
       "tags": ["Bestseller", "Aromatic", "Rice Dish"],
@@ -28,6 +30,7 @@
     },
     {
       "name": "Vegetable Korma",
+      "category": "main",
       "image": "./Image/vegetable_korma.jpg",
       "description": "A creamy coconut-based curry made with fresh seasonal vegetables and mild spices.",
       "tags": ["Vegetarian", "Creamy", "Healthy"],
@@ -36,12 +39,12 @@
       "rating": 4.3,
       "reviewCount": 120,
       "reviews": "120 Reviews",
-    
       "stock": "In Stock",
       "badge": "Healthy"
     },
     {
       "name": "Mutton Rezala",
+      "category": "main",
       "image": "./Image/mutton-rezala.webp",
       "description": "A royal Mughlai dish featuring tender mutton in a rich yogurt and cashew gravy.",
       "tags": ["Royal", "Mild", "Special"],
@@ -50,12 +53,12 @@
       "rating": 4.2,
       "reviewCount": 185,
       "reviews": "185 Reviews",
-        
       "stock": "In Stock",
       "badge": "Chef's Pick"
     },
     {
       "name": "Prawn Malai Curry",
+      "category": "main",
       "image": "./Image/prawn_malai_curry.webp",
       "description": "Juicy prawns cooked in a creamy coconut milk gravy with delicate spices.",
       "tags": ["Seafood", "Creamy", "Premium"],
@@ -69,6 +72,7 @@
     },
     {
       "name": "Egg Masala Curry",
+      "category": "main",
       "image": "./Image/egg-masala-curry.webp",
       "description": "Boiled eggs simmered in a thick, spicy tomato-onion gravy.",
       "tags": ["Protein Rich", "Spicy", "Classic"],
@@ -82,6 +86,7 @@
     },
     {
       "name": "Chicken Bhuna",
+      "category": "main",
       "image": "./Image/chicken-vuna.webp",
       "description": "Dry-style spicy chicken cooked with caramelized onions and traditional spices.",
       "tags": ["Spicy", "Dry Curry", "Traditional"],
@@ -89,10 +94,69 @@
       "price": "£11.49",
       "rating": 4.4,
       "reviewCount": 167,
-
       "reviews": "167 Reviews",
       "stock": "In Stock",
       "badge": "Spicy"
+    },
+
+
+    {
+      "name": "Chicken Samosa",
+      "category": "starter",
+      "image": "./Image/chicken_somucha.webp",
+      "description": "Crispy pastry filled with spiced minced chicken and herbs.",
+      "tags": ["Crispy", "Snack", "Popular"],
+      "oldPrice": "£6.99",
+      "price": "£4.99",
+      "rating": 4.3,
+      "reviewCount": 150,
+      "reviews": "150 Reviews",
+      "stock": "In Stock",
+      "badge": "Starter"
+    },
+    {
+      "name": "Onion Bhaji",
+      "category": "starter",
+      "image": "./Image/onion_bhaji.webp",
+      "description": "Deep-fried onion fritters mixed with chickpea flour and spices.",
+      "tags": ["Vegetarian", "Crispy", "Street Food"],
+      "oldPrice": "£5.99",
+      "price": "£3.99",
+      "rating": 4.2,
+      "reviewCount": 130,
+      "reviews": "130 Reviews",
+      "stock": "In Stock",
+      "badge": "Veg Starter"
+    },
+
+
+    {
+      "name": "Gulab Jamun",
+      "category": "dessert",
+      "image": "./Image/gulab_jamun.webp",
+      "description": "Soft milk-solid dumplings soaked in sweet rose-flavored syrup.",
+      "tags": ["Sweet", "Traditional", "Dessert"],
+      "oldPrice": "£5.49",
+      "price": "£3.49",
+      "rating": 4.6,
+      "reviewCount": 220,
+      "reviews": "220 Reviews",
+      "stock": "In Stock",
+      "badge": "Sweet"
+    },
+    {
+      "name": "Mango Lassi",
+      "category": "dessert",
+      "image": "./Image/mango_lassi.webp",
+      "description": "Refreshing yogurt-based drink blended with ripe mango pulp.",
+      "tags": ["Drink", "Sweet", "Cooling"],
+      "oldPrice": "£4.99",
+      "price": "£2.99",
+      "rating": 4.5,
+      "reviewCount": 180,
+      "reviews": "180 Reviews",
+      "stock": "In Stock",
+      "badge": "Popular Drink"
     }
   ]
 }

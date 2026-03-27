@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="menu.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -16,20 +21,20 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="./menu.html">Menu</a></li>
             </ul>
 
-            <!-- Hamburger Button for Mobile -->
+
             <div class="toggle_btn" id="toggleBtn">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
-            <!-- Mobile Dropdown Menu -->
+
             <ul class="dropdownmenu" id="dropdownMenu">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="./menu.html">Menu</a></li>
             </ul>
         </nav>
 
@@ -44,25 +49,33 @@
 
             <div class="hero-content">
                 <h1>Discover the Flavors of Curry <span>Canvas</span></h1>
-        <p>From appetizers to desserts, explore our authentic South Asian dishes crafted with love and passion. Treat your taste buds today!</p>
-        <a href="#menu-items" class="hero-btn">View Menu</a>
+                <p>From appetizers to desserts, explore our authentic South Asian dishes crafted with love and passion.
+                    Treat your taste buds today!</p>
+                <a href="#menu-items" class="hero-btn">View Menu</a>
             </div>
         </section>
     </header>
 
     <main>
-            <section class="menu">
+        <section class="menu">
             <h3 class="section_title">Our Menu</h3>
             <p>
                 Explore our diverse menu featuring a variety of curries, biryanis,
                 and traditional Bangladeshi dishes.
             </p>
-
+           <!-- filter buttons -->
+            <div class="filter_buttons">
+                <button class="filter_btn active" data-filter="all">All</button>
+                <button class="filter_btn" data-filter="starter">Starters</button>
+                <button class="filter_btn" data-filter="main">Main Course</button>
+                <button class="filter_btn" data-filter="dessert">Desserts</button>
+            </div>
+          <!-- all menu items will be dynamically inserted here by menu.js --> -->
             <div class="menu_items" id="menuContainer"></div>
         </section>
     </main>
 
-      <footer>
+    <footer>
         <div class="footer-container">
             <!-- Logo & Description -->
             <div class="footer-column">
@@ -75,10 +88,10 @@
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Reservations</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -97,7 +110,7 @@
                 <ul>
                     <li>Email: <a href="mailto:info@currycanvas.com">info@currycanvas.com</a></li>
                     <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
-                    <li>Address: 123 Curry Street, Food City</li>
+                    <li>Address: winstone chirchill ave, Portsmouth, UK</li>
                 </ul>
             </div>
         </div>
@@ -107,7 +120,8 @@
             &copy; 2026 Curry Canvas. All rights reserved.
         </div>
     </footer>
-    
+
 </body>
 <script src="menu.js"></script>
+
 </html>

@@ -313,6 +313,35 @@
 
 
 
+/* Filter Buttons */
+.filter_buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filter_btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background: #ddd;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.filter_btn:hover {
+    background: #ff9900;
+    color: white;
+}
+
+.filter_btn.active {
+    background: linear-gradient(to right, #ff9900, #ff0000);
+    color: white;
+}
+
+
+
 footer {
     background-color: #111;
     /* dark background */
