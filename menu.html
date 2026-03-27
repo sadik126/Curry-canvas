@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h3 class="title">Curry <span>Canvas</span></h3>
+
+            <!-- Desktop Links -->
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+
+            <!-- Hamburger Button for Mobile -->
+            <div class="toggle_btn" id="toggleBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <ul class="dropdownmenu" id="dropdownMenu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <video autoplay muted loop class="hero-video">
+                <source src="./Image/banner_vedio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1>Discover the Flavors of Curry <span>Canvas</span></h1>
+        <p>From appetizers to desserts, explore our authentic South Asian dishes crafted with love and passion. Treat your taste buds today!</p>
+        <a href="#menu-items" class="hero-btn">View Menu</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+            <section class="menu">
+            <h3 class="section_title">Our Menu</h3>
+            <p>
+                Explore our diverse menu featuring a variety of curries, biryanis,
+                and traditional Bangladeshi dishes.
+            </p>
+
+            <div class="menu_items" id="menuContainer"></div>
+        </section>
+    </main>
+    
+</body>
+<script src="menu.js"></script>
+</html>
