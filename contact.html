@@ -1,15 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <h3 class="title">Curry <span>Canvas</span></h3>
+
+            <!-- Desktop Links -->
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+
+            <!-- Hamburger Button for Mobile -->
+            <div class="toggle_btn" id="toggleBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <ul class="dropdownmenu" id="dropdownMenu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <video autoplay muted loop class="hero-video">
+                <source src="./Image/banner_vedio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1>Let’s Connect with Curry <span>Canvas</span></h1>
+                <p>
+                    Every great experience begins with a conversation.
+                    Reach out to us for reservations, inquiries, or feedback.
+                </p>
+                <a href="#contact" class="hero-btn">Reach Out</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <div class="info-box">
+                <h3>📍 Address</h3>
+                <p>123 winstone chirchill ave, Portsmouth, UK</p>
+            </div>
+
+            <div class="info-box">
+                <h3>📞 Phone</h3>
+                <p>+44 1234 567890</p>
+            </div>
+
+            <div class="info-box">
+                <h3>📧 Email</h3>
+                <p>info@currycanvas.com</p>
+            </div>
+        </section>
+
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+        <section class="map">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.935997287183!2d-1.0938643!3d50.7952947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d9d91af2bd7%3A0x5d246ab7de37d188!2sUniversity%20of%20Portsmouth!5e0!3m2!1sen!2suk!4v1774573919399!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal" id="successModal">
+            <div class="modal-content">
+                <h3>Message Sent! 🎉</h3>
+                <p>Thank you for contacting Curry Canvas. We will get back to you soon.</p>
+                <button id="closeModal">Close</button>
+            </div>
+        </div>
+
+
+    </main>
+
+     <footer>
+        <div class="footer-container">
+            <!-- Logo & Description -->
+            <div class="footer-column">
+                <h3 class="title">Curry <span>Canvas</span> </h3>
+                <p>Curry Canvas brings the authentic flavors of South Asia straight to your table. Taste the tradition!
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Mon-Fri: 11:00 AM - 10:00 PM</li>
+                    <li>Sat-Sun: 12:00 PM - 11:00 PM</li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:info@currycanvas.com">info@currycanvas.com</a></li>
+                    <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li>Address: 123 Curry Street, Food City</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            &copy; 2026 Curry Canvas. All rights reserved.
+        </div>
+    </footer>
+
 </body>
+<script src="contact.js"></script>
+
 </html>
