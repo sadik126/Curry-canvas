@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+
+    <div class="register-container">
+        <h2>Create Account</h2>
+        <p>Register to continue</p>
+
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="fullName">Full Name</label>
+                <input 
+                    type="text" 
+                    id="fullName" 
+                    placeholder="Enter your full name" 
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="Enter your email" 
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Enter password" 
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input 
+                    type="password" 
+                    id="confirmPassword" 
+                    placeholder="Confirm password" 
+                    required
+                >
+            </div>
+
+            <button type="submit" class="register-btn">
+                Register
+            </button>
+        </form>
+
+        <p id="result"></p>
+
+        <div class="bottom-text">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <script>
+        document
+            .getElementById("registerForm")
+            .addEventListener("submit", register);
+
+        function register(e) {
+            e.preventDefault();
+
+            const fullName = document.getElementById("fullName").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const result = document.getElementById("result");
+
+            if (password !== confirmPassword) {
+                result.innerText = "Passwords do not match";
+                return;
+            }
+
+            fetch("http://localhost:3000/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name: fullName,
+                    email: email,
+                    password: password
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                result.innerText = data.message;
+
+                document.getElementById("registerForm").reset();
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                result.innerText = "Registration failed";
+            });
+        }
+    </script>
+
+</body>
+</html> 

@@ -26,6 +26,16 @@
 
             </ul>
 
+
+             <!-- Right Side Buttons -->
+        <div class="nav-buttons" id="navActions">
+            <a href="./login.html" class="btn login-btn">Login</a>
+            <a href="./register.html" class="btn register-btn">Register</a>
+        </div>
+
+
+        
+
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -35,6 +45,8 @@
                 <li> <a href="./about.html">About</a> </li>
                 <li> <a href="./contact.html">Contact</a> </li>
                 <li> <a href="./menu.html">Menu</a> </li>
+                <li><a href="./login.html" class="btn login-btn">Login</a></li>
+        <li><a href="./register.html" class="btn register-btn">Register</a></li>
             </div>
 
 
@@ -205,5 +217,33 @@
     </footer>
 </body>
 <script src="script.js"></script>
+<script>
+    const navActions = document.getElementById("navActions");
+    const userName = localStorage.getItem("userName");
+
+    if (userName) {
+        navActions.innerHTML = `
+            <span class="welcome-text">Welcome, ${userName}</span>
+            <button onclick="logout()" class="btn logout-btn">
+                Logout
+            </button>
+        `;
+    }
+
+    function logout() {
+        fetch("http://localhost:3000/logout", {
+            method: "POST",
+            credentials: "include"
+        })
+        .then(response => response.json())
+        .then(data => {
+            localStorage.removeItem("userName");
+            window.location.href = "login.html";
+        })
+        .catch(error => {
+            console.error("Logout Error:", error);
+        });
+    }
+</script>
 
 </html>

@@ -11,6 +11,58 @@
 }
 
 /* Navbar */
+
+
+/* Right Side Buttons */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Common Button Style */
+.btn {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+}
+
+/* Login Button */
+.login-btn {
+    background: linear-gradient(135deg, #ff9a44, #fc6076);
+    color: white;
+    box-shadow: 0 8px 20px rgba(252, 96, 118, 0.25);
+}
+
+.login-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(252, 96, 118, 0.35);
+}
+
+/* Register Button */
+.register-btn {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    box-shadow: 0 8px 20px rgba(24, 90, 157, 0.25);
+}
+
+.register-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(24, 90, 157, 0.35);
+}
+
+/* Smooth Hover Effect */
+.btn:hover {
+    scale: 1.05;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -424,6 +476,51 @@ footer {
     font-size: 16px;
     padding: 10px 25px;
   }
+
+
+      .nav-buttons {
+        display: none; /* Mobile e hide hobe */
+    }
+
+    .toggle_btn {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .dropdownmenu {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        width: 220px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .dropdownmenu.active {
+        display: flex;
+    }
+
+    .dropdownmenu li {
+        list-style: none;
+    }
+
+    .dropdownmenu a {
+        text-decoration: none;
+        color: #222;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .dropdownmenu a:hover {
+        color: #fc6076;
+    }
 
      .menu_items {
         grid-template-columns: 1fr;
